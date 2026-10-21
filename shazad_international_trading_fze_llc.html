@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHAZAD INTERNATIONAL TRADING FZE LLC | Global Business Solutions & Subsidiaries</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        royal: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            600: '#2563eb',
+                            800: '#1e3a8a',
+                            900: '#0f172a',
+                            950: '#090d16',
+                        },
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            DEFAULT: '#d4af37',
+                            light: '#fef3c7',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fef3c7 0%, #d4af37 50%, #b45309 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .royal-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+        }
+        .gold-border {
+            border-color: rgba(212, 175, 55, 0.4);
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-royal-950 text-slate-100 font-sans antialiased selection:bg-gold-500 selection:text-royal-950">
+
+    <!-- Top Bar with Contact info -->
+    <div class="bg-royal-900 border-b border-gold/20 text-xs sm:text-sm py-2 px-4 sm:px-8">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-6 flex-wrap justify-center sm:justify-start">
+                <span class="flex items-center gap-2 text-slate-300">
+                    <i class="fa-solid fa-location-dot text-gold"></i> CWS-1V-229009, 26th Floor, Amber Gem Tower, Ajman, UAE
+                </span>
+                <a href="tel:+971552827185" class="flex items-center gap-2 text-slate-300 hover:text-gold transition">
+                    <i class="fa-solid fa-phone text-gold"></i> +971 55 282 7185
+                </a>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="https://wa.me/971569029287" target="_blank" class="flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 transition font-medium">
+                    <i class="fa-brands fa-whatsapp text-base"></i> +971 56 902 9287
+                </a>
+                <span class="text-slate-600">|</span>
+                <a href="https://wa.me/94788394499" target="_blank" class="flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 transition font-medium">
+                    <i class="fa-brands fa-whatsapp text-base"></i> +94 78 839 4499
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-royal-950/90 backdrop-blur-md border-b border-gold/20 shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between">
+            <a href="http://shazadintl.me/" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 rounded-lg overflow-hidden border border-gold/50 shadow-md">
+                    <img src="Shazad Global Trade Emblem.png" alt="Shazad International Emblem" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://placehold.co/100x100/0f172a/d4af37?text=SIT'">
+                </div>
+                <div>
+                    <span class="block font-bold text-lg sm:text-xl tracking-wide text-white group-hover:text-gold transition">SHAZAD INTERNATIONAL</span>
+                    <span class="block text-xs uppercase tracking-widest text-gold font-semibold">Trading FZE LLC</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm">
+                <a href="#home" class="text-gold hover:text-white transition">Home</a>
+                <a href="#about" class="text-slate-300 hover:text-gold transition">About Parent</a>
+                <a href="#subsidiaries" class="text-slate-300 hover:text-gold transition">Subsidiaries (7)</a>
+                <a href="#services" class="text-slate-300 hover:text-gold transition">Global Services</a>
+                <a href="#contact" class="text-slate-300 hover:text-gold transition">Contact Us</a>
+            </nav>
+
+            <div class="hidden lg:flex items-center gap-3">
+                <a href="#contact" class="bg-gradient-to-r from-gold to-amber-600 text-royal-950 font-bold px-5 py-2.5 rounded-full shadow-lg hover:opacity-90 transition text-sm">
+                    Get in Touch
+                </a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button id="menu-btn" class="md:hidden text-slate-300 hover:text-gold text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile menu dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-royal-900 border-b border-gold/20 px-6 py-4 space-y-3">
+            <a href="#home" class="block text-gold font-medium py-1">Home</a>
+            <a href="#about" class="block text-slate-300 hover:text-gold py-1">About Parent</a>
+            <a href="#subsidiaries" class="block text-slate-300 hover:text-gold py-1">Subsidiaries (7)</a>
+            <a href="#services" class="block text-slate-300 hover:text-gold py-1">Global Services</a>
+            <a href="#contact" class="block text-slate-300 hover:text-gold py-1">Contact Us</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-[90vh] flex items-center justify-center overflow-hidden py-20 px-4 sm:px-8">
+        <!-- Background overlay with image -->
+        <div class="absolute inset-0 z-0 opacity-25">
+            <img src="Shazad Global Trade Emblem.png" alt="Background" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-b from-royal-950/80 via-royal-950/90 to-royal-950 z-1"></div>
+
+        <div class="relative z-10 max-w-5xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold/10 border border-gold/30 text-gold text-xs sm:text-sm font-semibold uppercase tracking-wider mb-6">
+                <i class="fa-solid fa-globe"></i> Global Business Solutions & Multi-Sector Enterprise
+            </div>
+            
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-tight mb-6">
+                SHAZAD INTERNATIONAL <br>
+                <span class="gold-gradient-text">TRADING FZE LLC</span>
+            </h1>
+
+            <p class="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed mb-10">
+                Headquartered in Ajman, UAE, we are a prestigious parent enterprise orchestrating excellence across global import & export, luxury travel, worldwide tours, administrative services, HR consultancy, immigration solutions, and cutting-edge software development.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#subsidiaries" class="w-full sm:w-auto bg-gradient-to-r from-gold to-amber-600 text-royal-950 font-bold px-8 py-4 rounded-xl shadow-xl hover:scale-105 transition">
+                    Explore Our 7 Subsidiaries <i class="fa-solid fa-arrow-down ml-2"></i>
+                </a>
+                <a href="#contact" class="w-full sm:w-auto bg-royal-900 border border-gold/50 text-white font-semibold px-8 py-4 rounded-xl hover:bg-royal-800 transition">
+                    Partner With Us
+                </a>
+            </div>
+
+            <!-- Quick Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-12 border-t border-gold/20 max-w-4xl mx-auto">
+                <div class="glass-card p-4 rounded-xl">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-gold mb-1">07</div>
+                    <div class="text-xs sm:text-sm text-slate-400 uppercase tracking-wider">Dynamic Subsidiaries</div>
+                </div>
+                <div class="glass-card p-4 rounded-xl">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-gold mb-1">UAE</div>
+                    <div class="text-xs sm:text-sm text-slate-400 uppercase tracking-wider">Strategic HQ (Ajman)</div>
+                </div>
+                <div class="glass-card p-4 rounded-xl">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-gold mb-1">24/7</div>
+                    <div class="text-xs sm:text-sm text-slate-400 uppercase tracking-wider">Global Support</div>
+                </div>
+                <div class="glass-card p-4 rounded-xl">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-gold mb-1">100%</div>
+                    <div class="text-xs sm:text-sm text-slate-400 uppercase tracking-wider">Client Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parent Company Overview -->
+    <section id="about" class="py-24 px-4 sm:px-8 bg-royal-900/60 border-t border-b border-gold/20">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-5">
+                <div class="relative rounded-2xl overflow-hidden border-2 border-gold/40 shadow-2xl">
+                    <img src="Shazad Global Trade Emblem.png" alt="Shazad International Trading FZE LLC" class="w-full h-auto object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-royal-950 via-transparent to-transparent opacity-80"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <span class="text-xs uppercase tracking-widest text-gold font-bold">Parent Enterprise</span>
+                        <h3 class="text-2xl font-bold text-white">Shazad International Trading FZE LLC</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/10 text-gold text-xs font-semibold uppercase tracking-wider">
+                    Corporate Excellence
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white leading-tight">
+                    Driving Global Innovation & <span class="gold-gradient-text">Diversified Ventures</span>
+                </h2>
+                <p class="text-slate-300 leading-relaxed text-base sm:text-lg">
+                    As the parent holding organization, <strong>SHAZAD INTERNATIONAL TRADING FZE LLC</strong> spearheads a robust ecosystem of specialized companies. Operating from Amber Gem Tower, Ajman, we bridge international trade boundaries, deliver unforgettable travel experiences, provide seamless corporate paperwork & immigration consultancy, and empower businesses with advanced digital software solutions.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                    <div class="flex items-start gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold shrink-0 mt-1">
+                            <i class="fa-solid fa-ship"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white">Global Import & Export</h4>
+                            <p class="text-sm text-slate-400">Connecting international markets with secure logistics.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold shrink-0 mt-1">
+                            <i class="fa-solid fa-plane-departure"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white">Luxury Travel & Tours</h4>
+                            <p class="text-sm text-slate-400">Curating world-class holidays and holiday packages.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold shrink-0 mt-1">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white">Business & HR Consultancy</h4>
+                            <p class="text-sm text-slate-400">Comprehensive administrative and immigration services.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold shrink-0 mt-1">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white">Software Development</h4>
+                            <p class="text-sm text-slate-400">Digital transformation through Shazad Digital Labs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subsidiaries Section (All 7 Subsidiaries) -->
+    <section id="subsidiaries" class="py-24 px-4 sm:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-xs uppercase tracking-widest text-gold font-bold mb-3 block">Our Corporate Portfolio</span>
+            <h2 class="text-3xl sm:text-5xl font-extrabold text-white mb-4">Explore Our <span class="gold-gradient-text">7 Subsidiaries</span></h2>
+            <p class="text-slate-300 text-base sm:text-lg">Each subsidiary under Shazad International Trading FZE LLC is an industry leader dedicated to specialized service excellence.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Subsidiary 1 -->
+            <div class="glass-card rounded-2xl overflow-hidden group hover:border-gold transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="h-60 overflow-hidden relative border-b border-gold/20">
+                        <img src="Shazad Global Trade Network.png" alt="SHAZAD INTERNATIONAL EXPORT AND IMPORT" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/0f172a/d4af37?text=Export+Import'">
+                        <div class="absolute top-3 left-3 bg-royal-950/90 border border-gold/40 text-gold text-xs font-bold px-3 py-1 rounded-full">
+                            Subsidiary 01
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-gold transition">SHAZAD INTERNATIONAL EXPORT AND IMPORT</h3>
+                        <p class="text-slate-400 text-sm mb-4">Bridging global markets and creating international trade opportunities with robust supply chain solutions.</p>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-0">
+                    <a href="#contact" class="inline-flex items-center gap-2 text-gold font-semibold text-sm group-hover:translate-x-1 transition">
+                        Inquire Now <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Subsidiary 2 -->
+            <div class="glass-card rounded-2xl overflow-hidden group hover:border-gold transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="h-60 overflow-hidden relative border-b border-gold/20">
+                        <img src="7B Holidays Luxury Travel Logo.png" alt="7B HOLIDAYS TRAVELS" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/0f172a/d4af37?text=7B+Holidays+Travels'">
+                        <div class="absolute top-3 left-3 bg-royal-950/90 border border-gold/40 text-gold text-xs font-bold px-3 py-1 rounded-full">
+                            Subsidiary 02
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-gold transition">7B HOLIDAYS TRAVELS</h3>
+                        <p class="text-slate-400 text-sm mb-4">Premium travel agency offering tailored ticketing, holiday packages, and personalized itineraries worldwide.</p>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-0">
+                    <a href="#contact" class="inline-flex items-center gap-2 text-gold font-semibold text-sm group-hover:translate-x-1 transition">
+                        Book Your Trip <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Subsidiary 3 -->
+            <div class="glass-card rounded-2xl overflow-hidden group hover:border-gold transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="h-60 overflow-hidden relative border-b border-gold/20">
+                        <img src="7B Holidays Tropical Travel Logo.png" alt="7B HOLIDAYS TRAVELS AND TOURS" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/0f172a/d4af37?text=7B+Holidays+Tours'">
+                        <div class="absolute top-3 left-3 bg-royal-950/90 border border-gold/40 text-gold text-xs font-bold px-3 py-1 rounded-full">
+                            Subsidiary 03
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-gold transition">7B HOLIDAYS TRAVELS AND TOURS</h3>
+                        <p class="text-slate-400 text-sm mb-4">Full-service tour operator creating unforgettable holiday excursions, guided sightseeing, and luxury resort stays.</p>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-0">
+                    <a href="#contact" class="inline-flex items-center gap-2 text-gold font-semibold text-sm group-hover:translate-x-1 transition">
+                        Explore Tours <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Subsidiary 4 -->
+            <div class="glass-card rounded-2xl overflow-hidden group hover:border-gold transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="h-60 overflow-hidden relative border-b border-gold/20">
+                        <img src="GlobalDesk Worldwide Business Services.png" alt="GLOBALDESK ADMINISTRATIVE SERVICES" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/0f172a/d4af37?text=GlobalDesk+Admin'">
+                        <div class="absolute top-3 left-3 bg-royal-950/90 border border-gold/40 text-gold text-xs font-bold px-3 py-1 rounded-full">
+                            Subsidiary 04
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-gold transition">GLOBALDESK ADMINISTRATIVE SERVICES</h3>
+                        <p class="text-slate-400 text-sm mb-4">Expert business setup support, document clearance, and corporate PRO services across the UAE.</p>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-0">
+                    <a href="#contact" class="inline-flex items-center gap-2 text-gold font-semibold text-sm group-hover:translate-x-1 transition">
+                        Get Support <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Subsidiary 5 -->
+            <div class="glass-card rounded-2xl overflow-hidden group hover:border-gold transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="h-60 overflow-hidden relative border-b border-gold/20">
+                        <img src="GlobalDesk HR Consultancy Branding.png" alt="GLOBALDESK HR CONSULTANCY" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/0f172a/d4af37?text=GlobalDesk+HR'">
+                        <div class="absolute top-3 left-3 bg-royal-950/90 border border-gold/40 text-gold text-xs font-bold px-3 py-1 rounded-full">
+                            Subsidiary 05
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-gold transition">GLOBALDESK HR CONSULTANCY</h3>
+                        <p class="text-slate-400 text-sm mb-4">Connecting elite talent with exceptional career opportunities and providing comprehensive human resource solutions.</p>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-0">
+                    <a href="#contact" class="inline-flex items-center gap-2 text-gold font-semibold text-sm group-hover:translate-x-1 transition">
+                        Hire Talent <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Subsidiary 6 -->
+            <div class="glass-card rounded-2xl overflow-hidden group hover:border-gold transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="h-60 overflow-hidden relative border-b border-gold/20">
+                        <img src="GlobalDesk Immigration Services Banner.png" alt="GLOBALDESK IMMIGRATION SERVICES" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/0f172a/d4af37?text=GlobalDesk+Immigration'">
+                        <div class="absolute top-3 left-3 bg-royal-950/90 border border-gold/40 text-gold text-xs font-bold px-3 py-1 rounded-full">
+                            Subsidiary 06
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-gold transition">GLOBALDESK IMMIGRATION SERVICES</h3>
+                        <p class="text-slate-400 text-sm mb-4">Trusted visa consultancy and global immigration advisory for professionals, families, and investors.</p>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-0">
+                    <a href="#contact" class="inline-flex items-center gap-2 text-gold font-semibold text-sm group-hover:translate-x-1 transition">
+                        Visa Consultation <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Subsidiary 7 -->
+            <div class="glass-card rounded-2xl overflow-hidden group hover:border-gold transition duration-300 flex flex-col justify-between md:col-span-2 lg:col-span-1">
+                <div>
+                    <div class="h-60 overflow-hidden relative border-b border-gold/20">
+                        <img src="Shazad Digital Labs Branding Poster.png" alt="SHAZAD DIGITAL LABS" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/0f172a/d4af37?text=Shazad+Digital+Labs'">
+                        <div class="absolute top-3 left-3 bg-royal-950/90 border border-gold/40 text-gold text-xs font-bold px-3 py-1 rounded-full">
+                            Subsidiary 07
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-gold transition">SHAZAD DIGITAL LABS</h3>
+                        <p class="text-slate-400 text-sm mb-4">Premier software house providing custom web design, mobile apps, enterprise IT solutions, and digital branding.</p>
+                    </div>
+                </div>
+                <div class="px-6 pb-6 pt-0">
+                    <a href="#contact" class="inline-flex items-center gap-2 text-gold font-semibold text-sm group-hover:translate-x-1 transition">
+                        Build Software <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Services Overview Section -->
+    <section id="services" class="py-24 px-4 sm:px-8 bg-royal-900/40 border-t border-gold/20">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs uppercase tracking-widest text-gold font-bold mb-3 block">Comprehensive Expertise</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white mb-4">Tailored Solutions Across <span class="gold-gradient-text">Multiple Sectors</span></h2>
+                <p class="text-slate-300">Discover how our group companies deliver integrated solutions to empower your personal and business ambitions.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-2xl border-l-4 border-l-gold">
+                    <div class="w-14 h-14 rounded-xl bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-2xl mb-6">
+                        <i class="fa-solid fa-globe-americas"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Global Trade & Supply</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Facilitating seamless import and export operations, cargo coordination, and international commercial exchange through Shazad International Export & Import.
+                    </p>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl border-l-4 border-l-gold">
+                    <div class="w-14 h-14 rounded-xl bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-2xl mb-6">
+                        <i class="fa-solid fa-umbrella-beach"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Travel & Leisure</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Curating exceptional holiday experiences, flight bookings, guided tours, and hospitality packages through 7B Holidays Travels & Tours.
+                    </p>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl border-l-4 border-l-gold">
+                    <div class="w-14 h-14 rounded-xl bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-2xl mb-6">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Corporate & HR Services</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Providing top-tier PRO paperwork, document clearance, recruitment consultancy, immigration visas, and custom software solutions via GlobalDesk & Shazad Digital Labs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-4 sm:px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 glass-card p-8 sm:p-12 rounded-3xl border border-gold/30">
+            <div class="lg:col-span-5 space-y-8">
+                <div>
+                    <span class="text-xs uppercase tracking-widest text-gold font-bold mb-2 block">Get in Touch</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Connect With Our Corporate Headquarters</h2>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Reach out to Shazad International Trading FZE LLC or any of our 7 subsidiaries for inquiries, partnerships, bookings, or professional consultations.
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-xl shrink-0">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white mb-1">Office Address</h4>
+                            <p class="text-sm text-slate-300">CWS-1V-229009, 26th Floor,<br>Amber Gem Tower, Ajman, UAE</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-xl shrink-0">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white mb-1">Direct Telephone</h4>
+                            <a href="tel:+971552827185" class="text-sm text-slate-300 hover:text-gold transition">+971 55 282 7185</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-gold/10 border border-gold/30 flex items-center justify-center text-emerald-400 text-xl shrink-0">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white mb-1">WhatsApp Support</h4>
+                            <div class="flex flex-col gap-1">
+                                <a href="https://wa.me/971569029287" target="_blank" class="text-sm text-emerald-400 hover:underline">+971 56 902 9287</a>
+                                <a href="https://wa.me/94788394499" target="_blank" class="text-sm text-emerald-400 hover:underline">+94 78 839 4499</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="lg:col-span-7 bg-royal-950/60 p-8 rounded-2xl border border-gold/20">
+                <h3 class="text-2xl font-bold text-white mb-6">Send Us a Message</h3>
+                <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Your Name</label>
+                            <input type="text" required class="w-full bg-royal-900 border border-gold/30 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold transition text-sm" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Email Address</label>
+                            <input type="email" required class="w-full bg-royal-900 border border-gold/30 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold transition text-sm" placeholder="john@example.com">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Select Subsidiary / Department</label>
+                        <select class="w-full bg-royal-900 border border-gold/30 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold transition text-sm">
+                            <option>Shazad International Trading FZE LLC (Parent Company)</option>
+                            <option>1. Shazad International Export and Import</option>
+                            <option>2. 7B Holidays Travels</option>
+                            <option>3. 7B Holidays Travels and Tours</option>
+                            <option>4. GlobalDesk Administrative Services</option>
+                            <option>5. GlobalDesk HR Consultancy</option>
+                            <option>6. GlobalDesk Immigration Services</option>
+                            <option>7. Shazad Digital Labs</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Your Message</label>
+                        <textarea rows="4" required class="w-full bg-royal-900 border border-gold/30 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold transition text-sm" placeholder="How can we assist you today?"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-gradient-to-r from-gold to-amber-600 text-royal-950 font-bold py-3.5 rounded-xl shadow-lg hover:opacity-90 transition">
+                        Submit Inquiry
+                    </button>
+                    <div id="form-success" class="hidden text-emerald-400 text-center text-sm font-medium pt-2">
+                        Thank you! Your message has been sent successfully. We will contact you shortly.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-royal-950 border-t border-gold/20 pt-16 pb-12 px-4 sm:px-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+            
+            <div class="lg:col-span-2 space-y-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg overflow-hidden border border-gold/50">
+                        <img src="Shazad Global Trade Emblem.png" alt="Logo" class="w-full h-full object-cover">
+                    </div>
+                    <span class="font-bold text-lg text-white">SHAZAD INTERNATIONAL</span>
+                </div>
+                <p class="text-slate-400 text-sm leading-relaxed max-w-sm">
+                    SHAZAD INTERNATIONAL TRADING FZE LLC is a premier multi-sector parent enterprise based in Ajman, UAE, delivering excellence worldwide.
+                </p>
+                <div class="text-sm text-gold font-semibold">
+                    Domain: <a href="http://shazadintl.me/" class="underline hover:text-white transition">http://shazadintl.me/</a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-white mb-4 text-sm uppercase tracking-wider">Quick Links</h4>
+                <ul class="space-y-2.5 text-sm">
+                    <li><a href="#home" class="text-slate-400 hover:text-gold transition">Home</a></li>
+                    <li><a href="#about" class="text-slate-400 hover:text-gold transition">About Parent Company</a></li>
+                    <li><a href="#subsidiaries" class="text-slate-400 hover:text-gold transition">Our 7 Subsidiaries</a></li>
+                    <li><a href="#services" class="text-slate-400 hover:text-gold transition">Global Services</a></li>
+                    <li><a href="#contact" class="text-slate-400 hover:text-gold transition">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-white mb-4 text-sm uppercase tracking-wider">Subsidiaries (1-4)</h4>
+                <ul class="space-y-2 text-xs text-slate-400">
+                    <li>1. Shazad International Export & Import</li>
+                    <li>2. 7B Holidays Travels</li>
+                    <li>3. 7B Holidays Travels and Tours</li>
+                    <li>4. GlobalDesk Administrative Services</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-white mb-4 text-sm uppercase tracking-wider">Subsidiaries (5-7)</h4>
+                <ul class="space-y-2 text-xs text-slate-400">
+                    <li>5. GlobalDesk HR Consultancy</li>
+                    <li>6. GlobalDesk Immigration Services</li>
+                    <li>7. Shazad Digital Labs</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="max-w-7xl mx-auto pt-8 border-t border-gold/10 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+            <p>&copy; 2026 SHAZAD INTERNATIONAL TRADING FZE LLC. All Rights Reserved.</p>
+            <p>Official Web Portal: <a href="http://shazadintl.me/" class="text-gold hover:underline">shazadintl.me</a></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu & Form -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const successMsg = document.getElementById('form-success');
+            successMsg.classList.remove('hidden');
+            document.getElementById('contact-form').reset();
+            setTimeout(() => {
+                successMsg.classList.add('hidden');
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
